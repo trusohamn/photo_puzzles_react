@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d5f2d92.chunk.css",
-    "main.js": "/static/js/main.447bc851.chunk.js",
-    "main.js.map": "/static/js/main.447bc851.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.3310f33a.chunk.js": "/static/js/2.3310f33a.chunk.js",
-    "static/js/2.3310f33a.chunk.js.map": "/static/js/2.3310f33a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a8a6a3167188ada8234e5a60483c9388.js": "/precache-manifest.a8a6a3167188ada8234e5a60483c9388.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.9d5f2d92.chunk.css.map": "/static/css/main.9d5f2d92.chunk.css.map"
+    "main.css": "/photo_puzzles_react/static/css/main.9d5f2d92.chunk.css",
+    "main.js": "/photo_puzzles_react/static/js/main.447bc851.chunk.js",
+    "main.js.map": "/photo_puzzles_react/static/js/main.447bc851.chunk.js.map",
+    "runtime~main.js": "/photo_puzzles_react/static/js/runtime~main.b9065c75.js",
+    "runtime~main.js.map": "/photo_puzzles_react/static/js/runtime~main.b9065c75.js.map",
+    "static/js/2.3310f33a.chunk.js": "/photo_puzzles_react/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/photo_puzzles_react/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/photo_puzzles_react/index.html",
+    "precache-manifest.b92cf5fa5fa4b857bb7c4ac34f575b4a.js": "/photo_puzzles_react/precache-manifest.b92cf5fa5fa4b857bb7c4ac34f575b4a.js",
+    "service-worker.js": "/photo_puzzles_react/service-worker.js",
+    "static/css/main.9d5f2d92.chunk.css.map": "/photo_puzzles_react/static/css/main.9d5f2d92.chunk.css.map"
   }
 }
