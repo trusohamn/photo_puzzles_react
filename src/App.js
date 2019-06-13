@@ -1,26 +1,63 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Board />
     </div>
   );
 }
+
+function Board() {
+  return (
+    <div class="Board-container">
+      <div class="ghost"></div>
+      <div class="ghost"></div>
+      <div class="ghost"></div>
+      <div class="ghost"></div>
+      <div class="ghost"></div>
+
+      <Puzzle i='1' />
+      <Puzzle i='2' />
+      <Puzzle i='3' />
+      <Puzzle i='4' />
+
+
+    </div>
+  );
+}
+
+function Puzzle(props) {
+
+  return (
+    <div id={`image${props.i}`} class="puzzle">
+      <div class="top">
+        <button value="up">^</button>
+      </div>
+      <div class="middle">
+        <button value="left">&lt;</button>
+        <button value="right">></button>
+      </div>
+      <div class="bottom">
+        <button value="down">v</button>
+      </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default App;

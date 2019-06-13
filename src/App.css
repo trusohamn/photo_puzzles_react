@@ -1,33 +1,130 @@
-.App {
-  text-align: center;
+html {
+  margin: 0px;
+  background-color: black;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Board-container {
+  margin: 15vh auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: '11 12 '
+}
+
+.ghost, .puzzle {
+  width: 300px;
+  height: 200px;
+}
+
+.puzzle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(https://picsum.photos/600/400);
+  border-radius: 10%;
+  box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
+}
+
+.puzzle:hover button {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+#image1 {
+  background-position: 0px 0px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+#image2 {
+  background-position: 300px 0px;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+#image3 {
+  background-position: 0px 200px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+#image4 {
+  background-position: 300px 200px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+button {
+  padding: 20px 25px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 20%;
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus {
+  outline: none;
+  border: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.top, .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1500px) {
+  .Board-container {
+    transform: scale(1.3);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 900px) {
+  .Board-container {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Board-container {
+    margin: 10px 0px;
+    grid-gap: 2px;
+    transform: scale(0.7);
+  }
+  .ghost, .puzzle {
+    width: 150px;
+    height: 150px;
+  }
+  .puzzle {
+    background-image: url(https://picsum.photos/300/300);
+  }
+  button {
+    padding: 10px 15px;
+  }
+  #image1 {
+    background-position: 0px 0px;
+  }
+  #image2 {
+    background-position: 150px 0px;
+  }
+  #image3 {
+    background-position: 0px 150px;
+  }
+  #image4 {
+    background-position: 150px 150px;
   }
 }
